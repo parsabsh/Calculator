@@ -26,4 +26,10 @@ public class ShuntingYardTest {
         Assert.assertEquals("30.0", answer);
     }
 
+    @Test
+    public void bug() {
+        String answer = calculator.shuntingYard("1 × 1 - 1");
+        Assert.assertEquals("0.0", answer);
+    }
+
 }

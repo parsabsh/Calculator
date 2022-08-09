@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void updateMonitor() {
-        if (expression.startsWith(getString(R.string.zero))) {
+        if (expression.startsWith("0") && !expression.startsWith("0.")) {
             expression = expression.substring(1);
         }
         if (expression.length() == 0) {

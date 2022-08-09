@@ -36,7 +36,7 @@ public class ShuntingYardCalculator {
                     operator_stack.push(new Node(expression.charAt(i)));
                 } else {
                     // operators with higher or equal precedence
-                    while (operator_stack.peek().getOperator() != '(' && !operator_stack.isEmpty()) {
+                    while (!operator_stack.isEmpty() && operator_stack.peek().getOperator() != '(') {
                         // pop from the operator stack and put it into the output queue
                         output_queue.push(new Node(operator_stack.pop().getOperator()));
                     }
