@@ -16,13 +16,13 @@ public class ShuntingYardTest {
 
     @Test
     public void simpleSubtraction() {
-        String answer = calculator.shuntingYard("5 - 6");
+        String answer = calculator.shuntingYard("5.2 - 6.2");
         Assert.assertEquals("-1.0", answer);
     }
 
     @Test
     public void simpleMultiplication() {
-        String answer = calculator.shuntingYard("5 * 6");
+        String answer = calculator.shuntingYard("5 × 6");
         Assert.assertEquals("30.0", answer);
     }
 

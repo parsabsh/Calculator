@@ -98,5 +98,6 @@ public class MainActivity extends AppCompatActivity {
             expression = getString(R.string.zero);
         }
         monitor.setText(expression);
+
     }
 }
