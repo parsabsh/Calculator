@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         inputButtons.add(findViewById(R.id.division));
         inputButtons.add(findViewById(R.id.seven));
         inputButtons.add(findViewById(R.id.eight));
+        inputButtons.add(findViewById(R.id.nine));
         inputButtons.add(findViewById(R.id.multiply));
         inputButtons.add(findViewById(R.id.four));
         inputButtons.add(findViewById(R.id.five));
