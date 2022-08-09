@@ -27,9 +27,14 @@ public class ShuntingYardTest {
     }
 
     @Test
-    public void bug() {
+    public void simpleCombinationOfMultiplicationAndAddition() {
         String answer = calculator.shuntingYard("1 × 1 - 1");
         Assert.assertEquals("0.0", answer);
     }
 
+    @Test
+    public void complexCalculation() {
+        String answer = calculator.shuntingYard("(-1.3 + 2) × 4 ÷ 1.4");
+        Assert.assertEquals("2.0", answer);
+    }
 }
